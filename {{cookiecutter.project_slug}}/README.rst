@@ -15,6 +15,12 @@
         :alt: Documentation Status
 {%- endif %}
 
+{% if cookiecutter.use_codecov == 'y' %}
+.. image:: https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/branch/master/graphs/badge.svg
+        :target: https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/branch/master/graphs/badge
+        :alt: Code Coverage
+{% endif %}
+
 {% if cookiecutter.add_pyup_badge == 'y' %}
 .. image:: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/shield.svg
      :target: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/

@@ -5,6 +5,6 @@ __email__ = '{{ cookiecutter.email }}'
 __version__ = '{{ cookiecutter.version }}'
 
 
-from .SubPackage1.MyClass1 import MyClass1
-from .SubPackage2.MyClass2 import MyClass2
-from .SubPackage2.MyClass3 import MyClass3
+from {{ cookiecutter.project_slug }}.SubPackage1.MyClass1 import MyClass1
+from {{ cookiecutter.project_slug }}.SubPackage2.MyClass2 import MyClass2
+from {{ cookiecutter.project_slug }}.SubPackage2.MyClass3 import MyClass3
