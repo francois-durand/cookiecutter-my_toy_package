@@ -46,4 +46,4 @@ Credits
 This package was created with Cookiecutter_ and the `francois-durand/cookiecutter-my_toy_package`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/francois-durand/cookiecutter-my_toy_package
+.. _`francois-durand/cookiecutter-my_toy_package`: https://github.com/francois-durand/cookiecutter-my_toy_package
