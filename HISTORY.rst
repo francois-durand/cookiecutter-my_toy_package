@@ -9,6 +9,7 @@ History
 * Merge the two former projects, *My Toy Package* and *cookiecutter-my_toy_package*, into a unique project named
   *Package Helper*.
 * Customizable tutorial: the tools that you do not use can be hidden.
+* Complete revision of the tutorial.
 
 ------------------
 0.9.0 (2020-01-22)
