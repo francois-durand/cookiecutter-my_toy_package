@@ -1,10 +1,23 @@
-===========================
-Cookiecutter My Toy Package
-===========================
+==============
+Package Helper
+==============
 
-Cookiecutter_ template for a Python package.
+.. image:: https://readthedocs.org/projects/my-toy-package/badge/?version=latest
+        :target: https://my-toy-package.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
 
-This is a fork of https://github.com/audreyr/cookiecutter-pypackage/. Main differences:
+Package Helper explains how to create, develop and maintain a Python package.
+
+The most prominent feature of Package Helper is a **tutorial** that gives a checklist of how to:
+
+* Create your package in a few minutes with Cookiecutter_,
+* Develop and maintain your package with PyCharm_.
+
+Optionally, you can also use GitHub_, ReadTheDocs_, Travis-CI_, PyPI_, Codecov_ and Pyup_. For more readability, the
+tools that you do not use can be hidden in the tutorial.
+
+Package Helper also provides a **template** of Python package. It is a fork of
+https://github.com/audreyr/cookiecutter-pypackage/. Here are the main differences with the original template:
 
 * Personalize default options.
 * Include example files for classes, with examples of documentation and testing.
@@ -19,7 +32,13 @@ This is a fork of https://github.com/audreyr/cookiecutter-pypackage/. Main diffe
 * Make Travis run also the doctests.
 * Use Codecov.
 
-Documentation: https://my-toy-package.readthedocs.io/.
+Documentation: https://package-helper.readthedocs.io/.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-
+.. _PyCharm: https://www.jetbrains.com/pycharm
+.. _GitHub: https://github.com
+.. _ReadTheDocs: https://readthedocs.org
+.. _Travis-CI: https://travis-ci.org
+.. _PyPI: https://pypi.python.org/pypi
+.. _Codecov: https://codecov.io
+.. _Pyup: https://pyup.io
