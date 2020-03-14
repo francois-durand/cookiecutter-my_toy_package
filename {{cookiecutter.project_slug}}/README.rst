@@ -43,7 +43,7 @@ Features
 Credits
 -------
 
-This package was created with Cookiecutter_ and the `francois-durand/cookiecutter-my_toy_package`_ project template.
+This package was created with Cookiecutter_ and the `francois-durand/package_helper`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`francois-durand/cookiecutter-my_toy_package`: https://github.com/francois-durand/cookiecutter-my_toy_package
+.. _`francois-durand/package_helper`: https://github.com/francois-durand/package_helper

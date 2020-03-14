@@ -2,8 +2,8 @@
 Package Helper
 ==============
 
-.. image:: https://readthedocs.org/projects/my-toy-package/badge/?version=latest
-        :target: https://my-toy-package.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/package-helper/badge/?version=latest
+        :target: https://package-helper.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 Package Helper explains how to create, develop and maintain a Python package.
@@ -27,10 +27,10 @@ https://github.com/audreyr/cookiecutter-pypackage/. Here are the main difference
   * Use ReadTheDocs theme.
   * Add a "reference" section in the documentation of the package.
 
-* Minor tweaks in ``setup.py``.
-* Remove version numbers from ``requirements_dev.txt``.
 * Make Travis run also the doctests.
 * Use Codecov.
+* Minor tweaks in ``setup.py``.
+* Remove version numbers from ``requirements_dev.txt``.
 
 Documentation: https://package-helper.readthedocs.io/.
 

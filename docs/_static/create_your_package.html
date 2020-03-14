@@ -6,11 +6,11 @@
 <h3>Generate Your Package with Cookiecutter</h3>
 <ol class="arabic">
 <li><p>Your project will need a project name (e.g. <em>My Toy Package</em>) and a project slug (typically <code class="docutils literal notranslate"><span class="pre">my_toy_package</span></code>).
-Before starting, check that your project slug is not used in PyPI, <strong>even if you do not plan to use PyPI right now</strong>.</p></li>
+Before starting, check that your project slug is not used in <a href="https://pypi.python.org/pypi">PyPI</a>, <strong>even if you do not plan to use PyPI for the moment</strong>.</p></li>
 <li><p>In a terminal (e.g. Anaconda Prompt):</p>
 <ol class="arabic">
 <li><p>Go to the parent directory of where you want to put the directory of your package, e.g. <code class="docutils literal notranslate"><span class="pre">D:\GitHub\</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cookiecutter</span> <span class="pre">https://github.com/francois-durand/cookiecutter-my_toy_package.git</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cookiecutter</span> <span class="pre">https://github.com/francois-durand/package_helper.git</span></code></p></li>
 <li><p>Answer the questions. Here is an example (some explanations follow):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">full_name</span> <span class="p">[</span><span class="n">F</span><span class="o">.</span> <span class="n">Durand</span><span class="p">]:</span> <span class="n">François</span> <span class="n">Durand</span>
 <span class="n">email</span> <span class="p">[</span><span class="n">fradurand</span><span class="nd">@gmail</span><span class="o">.</span><span class="n">com</span><span class="p">]:</span> <span class="n">fradurand</span><span class="nd">@gmail</span><span class="o">.</span><span class="n">com</span>
@@ -18,8 +18,8 @@ Before starting, check that your project slug is not used in PyPI, <strong>even 
 <span class="n">project_name</span> <span class="p">[</span><span class="n">Python</span> <span class="n">Boilerplate</span><span class="p">]:</span> <span class="n">My</span> <span class="n">Toy</span> <span class="n">Package</span>
 <span class="n">project_slug</span> <span class="p">[</span><span class="n">my_toy_package</span><span class="p">]:</span>
 <span class="n">project_short_description</span> <span class="p">[</span><span class="n">Python</span> <span class="n">Boilerplate</span> <span class="n">contains</span> <span class="nb">all</span> <span class="n">the</span> <span class="n">boilerplate</span>
-<span class="n">you</span> <span class="n">need</span> <span class="n">to</span> <span class="n">create</span> <span class="n">a</span> <span class="n">Python</span> <span class="n">package</span><span class="o">.</span><span class="p">]:</span> <span class="n">My</span> <span class="n">Toy</span> <span class="n">Package</span> <span class="n">shows</span> <span class="n">how</span> <span class="n">to</span>
-<span class="n">create</span> <span class="ow">and</span> <span class="n">maintain</span> <span class="n">a</span> <span class="n">package</span><span class="o">.</span>
+<span class="n">you</span> <span class="n">need</span> <span class="n">to</span> <span class="n">create</span> <span class="n">a</span> <span class="n">Python</span> <span class="n">package</span><span class="o">.</span><span class="p">]:</span> <span class="n">My</span> <span class="n">Toy</span> <span class="n">Package</span> <span class="n">is</span> <span class="n">a</span> <span class="n">beautiful</span>
+<span class="n">package</span><span class="o">.</span>
 <span class="n">pypi_username</span> <span class="p">[</span><span class="n">francois</span><span class="o">-</span><span class="n">durand</span><span class="p">]:</span>
 <span class="n">version</span> <span class="p">[</span><span class="mf">0.1</span><span class="o">.</span><span class="mi">0</span><span class="p">]:</span>
 <span class="n">use_pytest</span> <span class="p">[</span><span class="n">y</span><span class="p">]:</span>
@@ -51,16 +51,17 @@ Before starting, check that your project slug is not used in PyPI, <strong>even 
 <li><p><code class="docutils literal notranslate"><span class="pre">use_pytest</span></code>: there are essentially three ways to do unit tests in Python: unittest (the standard solution),
 pytest (the recommended test package) and doctest (where tests are integrated in the docstrings). If you are new to
 testing, I suggest using doctest. But even so, pytest is useful to configure your tests (as we will do a bit
-later). For this reason, in all cases, my advice is to answer yes.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">use_codecov</span></code>: you will use Codecov to assess the coverage of your code by your tests.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">use_pypi_deployment_with_travis</span></code>: when you will do a <em>release</em> in GitHub, Travis will automatically release
+later). For this reason, in all cases, I suggest to answer <em>yes</em>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_codecov</span></code>: you use Codecov to assess the coverage of your code by your tests.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_pypi_deployment_with_travis</span></code>: when you make a <em>release</em> on GitHub, Travis CI automatically publishes
 your package on PyPI.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">add_pyup_badge</span></code>: a pyup badge will appear in the readme of your package. I suggest to answer no.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code>: this allows you to easily call your program with unix-style command, e.g. <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">my_program.py</span> <span class="pre">--help</span></code>.
-<code class="docutils literal notranslate"><span class="pre">Argparse</span></code> provides the same kind of feature. You can choose either of them, even if you do not use it for the
-moment. But personally, I answer no.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">create_author_file</span></code>: I suggest to answer yes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">add_pyup_badge</span></code>: a Pyup badge appears in the readme of your package. I suggest to answer <em>no</em>, even if you use Pyup.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> and <code class="docutils literal notranslate"><span class="pre">Argparse</span></code> allow you
+    to easily call your program with unix-style command, e.g. <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">my_program.py</span> <span class="pre">--help</span></code>.
+    You can choose either of them without harm, even if you do not use it for the moment. But personally, I answer <em>no</em>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">create_author_file</span></code>: I suggest to answer <em>yes</em>.</p></li>
 </ul>
+    <p>You can now look at the directory of your package: the whole file structure is in there!</p>
 </div>
 
 
@@ -80,9 +81,7 @@ moment. But personally, I answer no.</p></li>
 <div class="venv">
 <h3>Create a Virtual Environment</h3>
 <p>A virtual environment is essentially a Python installation dedicated to your project, with its own versions
-of the third-party packages. It ensures that if you reuse this project several months later, it will still work…
-This is not mandatory, but I suggest it especially if you use a third-party package that is still in
-a 0.x.x release (which means that its API is not considered stable yet).</p>
+of the third-party packages. It ensures that if you reuse this project several months later, it will still work…</p>
 <ol class="arabic simple">
 <li><p>Menu File → Settings → Project → Project Interpreter. (For Apple users: PyCharm → Preferences → Project →
 Project Interpreter.)</p></li>
@@ -95,10 +94,15 @@ Project Interpreter.)</p></li>
 
 <div>
 <h3>Install Dev Requirements</h3>
-<p>In the PyCharm terminal:</p>
+    <p>The file <code class="docutils literal notranslate"><span class="pre">requirements_dev.txt</span></code>
+        contains the list of the third-party packages that you need for development, such as
+        <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> or
+        <code class="docutils literal notranslate"><span class="pre">pytest</span></code>, but
+        that the end-user does not need to use your package.</p>
+<p>In PyCharm's terminal:</p>
 <ol class="arabic">
 <li><p>Ensure you are in the directory of your package (e.g. <code class="docutils literal notranslate"><span class="pre">D:\GitHub\my_toy_package</span></code>).</p></li>
-<li><p>If you have set a virtual environment, ensure that it is activated: there should be <code class="docutils literal notranslate"><span class="pre">(venv)</span></code> at the beginning of
+<li class="venv"><p>Ensure that your virtual environment is activated: there should be <code class="docutils literal notranslate"><span class="pre">(venv)</span></code> at the beginning of
 the line. If not:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Windows</span><span class="p">:</span> <span class="n">venv</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
 <span class="n">Linux</span><span class="p">:</span>   <span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
@@ -113,9 +117,8 @@ the line. If not:</p>
 
 <div>
 <h3>Install Your Package in “Development Mode”</h3>
-<p>This way, your package behaves as if it were installed, but any change you make will have effect immediately.
-In the PyCharm terminal, you should still be in the directory of your package, with your virtual environment activated.
-Do:</p>
+    <p>This way, your package behaves as if it were installed, but any change you make will have effect immediately.</p>
+    <p>In PyCharm's terminal, you should still be in the directory of your package. Do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">develop</span>
 </pre></div>
 </div>
@@ -135,9 +138,13 @@ Do:</p>
 <li><p>Output: the “build” directory of your project.</p></li>
 <li><p>OK.</p></li>
 </ol>
-<p>Run this configuration: you should have a warning “Title underline too short”. Go to the mentioned file
-and correct the problem. Then run the configuration again: normally, it generates the documentation. To
-check the result, you can open the file <code class="docutils literal notranslate"><span class="pre">build/index.html</span></code>.</p>
+    <p>Run this configuration: you should have a warning “Title underline too short”.</p>
+    <ol class="arabic simple">
+        <li><p>Go to the mentioned file and correct the problem.</p></li>
+        <li><p>Run the configuration again: normally, it generates the documentation.</p></li>
+        <li><p>To
+check the result, you can open the file <code class="docutils literal notranslate"><span class="pre">build/index.html</span></code>.</p></li>
+    </ol>
 </div>
 
 
@@ -164,32 +171,31 @@ check the result, you can open the file <code class="docutils literal notranslat
 <li><p>Fill in the form and validate, e.g.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">New</span> <span class="n">repository</span> <span class="n">name</span><span class="p">:</span> <span class="n">my_toy_package</span>
 <span class="n">Remote</span> <span class="n">name</span><span class="p">:</span> <span class="n">origin</span>
-<span class="n">Description</span><span class="p">:</span> <span class="n">My</span> <span class="n">Toy</span> <span class="n">Package</span> <span class="n">shows</span> <span class="n">how</span> <span class="n">to</span> <span class="n">create</span> <span class="ow">and</span> <span class="n">maintain</span> <span class="n">a</span> <span class="n">package</span><span class="o">.</span>
+<span class="n">Description</span><span class="p">:</span> <span class="n">My</span> <span class="n">Toy</span> <span class="n">Package</span> <span class="n">is</span> <span class="n">a</span> <span class="n">beautiful</span> <span class="n">package</span><span class="o">.</span>
 </pre></div>
 </div>
 </li>
 </ol>
 <p>In a browser, you can go to your GitHub account to check that everything is there.</p>
-<p>N.B.: if you use a public GitHub repository, using PyPI is free (but not for a private repository).</p>
 </div>
 
 
 
 <div class="readthedocs">
 <h3>Set up ReadTheDocs</h3>
+<p>On ReadTheDocs' website:</p>
 <ol class="arabic">
-<li><p>On ReadTheDocs website:</p>
-<ol class="arabic">
-<li><p>Go to “My Projects”. Import a Project → Importer manuellement. Fill in the form and validate, e.g.:</p>
+    <li><p>Go to “My Projects”.</p></li>
+    <li><p>Import a Project → Importer manuellement.</p></li>
+    <li><p>Fill in the form and validate, e.g.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_toy_package</span>
 <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">francois</span><span class="o">-</span><span class="n">durand</span><span class="o">/</span><span class="n">my_toy_package</span>
 <span class="n">Git</span>
 </pre></div>
 </div>
 </li>
-<li><p>Admin → Advanced settings. Check “Installer votre projet dans un virtualenv via setup.py install”.</p></li>
-</ol>
-</li>
+    <li><p>Admin → Advanced settings.</p></li>
+    <li><p>Check “Installer votre projet dans un virtualenv via setup.py install”.</p></li>
 </ol>
 </div>
 
@@ -198,7 +204,7 @@ check the result, you can open the file <code class="docutils literal notranslat
 <div class="travis">
 <h3>Set up Travis CI</h3>
 <ol class="arabic">
-<li><p>On Travis website:</p>
+<li><p>On Travis' website:</p>
 <ol class="arabic simple">
 <li><p>Login using your Github credentials.</p></li>
 <li><p>It may take a few minutes for Travis CI to load up a list of all your GitHub repos. If you do not see your
@@ -207,13 +213,13 @@ new repo, log out and log in again.</p></li>
 <li><p>Click on “Activate repository”.</p></li>
 </ol>
 </li>
-<li><p>In PyCharm terminal, ensure that you are in the directory of your project and:</p>
+<li class="pypi"><p>In PyCharm's terminal, ensure that you are in the directory of your project and:
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">travis</span> <span class="n">encrypt</span> <span class="o">--</span><span class="n">add</span> <span class="n">deploy</span><span class="o">.</span><span class="n">password</span> <span class="s2">&quot;My PyPI password&quot;</span>
 </pre></div>
 </div>
-<p>(replace with your actual password, in quotation marks).</p>
+<p>(replace with your actual password, in quotation marks).</p></p>
 </li>
-<li><p>Open the file <code class="docutils literal notranslate"><span class="pre">.travis.yml</span></code>, which is in the root of your project (you can do so in PyCharm). Check that
+<li class="pypi"><p>Open the file <code class="docutils literal notranslate"><span class="pre">.travis.yml</span></code>, which is in the root of your project (you can do so in PyCharm). Check that
 <code class="docutils literal notranslate"><span class="pre">deploy.password.secure</span></code> is encoded.</p></li>
 </ol>
 </div>
@@ -222,15 +228,13 @@ new repo, log out and log in again.</p></li>
 
 <div class="pyup">
 <h3>Set up Pyup</h3>
-<p>If you work on a “small” project, I suggest that you do not use pyup: it will just generate a lot of spam in your email
-inbox. However, for a more ambitious project, it may be useful.</p>
 <ol class="arabic">
-<li><p>On Pyup website:</p>
+<li><p>On Pyup website:
 <ol class="arabic simple">
 <li><p>Click on the green <em>Add Repo</em> button and select the repo you created.</p></li>
 <li><p>A pop up appears. Personally, I checked the first item and unchecked the two others.</p></li>
 </ol>
-<p>Within a few minutes, you will probably receive a pull request in GitHub (and in your email).</p>
+<p>Within a few minutes, you will probably receive a pull request in GitHub (and in your email).</p></p>
 </li>
 <li><p>On GitHub website, open the pull request and:</p>
 <ol class="arabic simple">
@@ -273,7 +277,7 @@ choice of options, you should have three to five <em>badges</em>:</p>
 <li class="pyup"><p>Pyup: up-to-date.</p></li>
 </ol>
 </li>
-<li><p>In the table of contents, click on <em>Reference</em>. You should see the doc of your functions.</p></li>
+<li><p>In the table of contents, click on <em>Reference</em>. You should see the documentation of your functions.</p></li>
 </ol>
 </li>
 </ol>
