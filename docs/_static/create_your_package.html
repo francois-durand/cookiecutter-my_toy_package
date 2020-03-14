@@ -1,4 +1,9 @@
-<p>This section is adapted from: <a class="reference external" href="https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html">https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html</a> .</p>
+<p>
+    <em>This section is adapted from:
+    <a class="reference external" href="https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html">https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html</a>.
+    Creating your package should take less than 5 minutes with the minimal options (cookiecutter + PyCharm), and less
+        than 30 minutes if you use all the goodies (GitHub, ReadTheDocs, Travis, etc).</em>
+</p>
 
 
 
@@ -61,27 +66,16 @@ your package on PyPI.</p></li>
     You can choose either of them without harm, even if you do not use it for the moment. But personally, I answer <em>no</em>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">create_author_file</span></code>: I suggest to answer <em>yes</em>.</p></li>
 </ul>
-    <p>You can now look at the directory of your package: the whole file structure is in there!</p>
-</div>
-
-
-
-<div>
-<h3>Create the PyCharm Project</h3>
-<p>In PyCharm:</p>
-<ol class="arabic simple">
-<li><p>Create new project.</p></li>
-<li><p>In <em>Location</em>, fetch the directory of your project, e.g. <code class="docutils literal notranslate"><span class="pre">D:\GitHub\my_toy_package</span></code>. Validate.</p></li>
-<li><p>Warning that the directory is not empty: validate.</p></li>
-</ol>
+    <p>In PyCharm, choose "Open a project" and select the directory of your package: the whole file structure is in there!</p>
 </div>
 
 
 
 <div class="venv">
 <h3>Create a Virtual Environment</h3>
-<p>A virtual environment is essentially a Python installation dedicated to your project, with its own versions
-of the third-party packages. It ensures that if you reuse this project several months later, it will still work…</p>
+<p><em>A virtual environment is essentially a Python installation dedicated to your project, with its own versions
+of the third-party packages. It ensures that if you reuse this project several months later, it will still work…</em></p>
+    <p>In PyCharm:</p>
 <ol class="arabic simple">
 <li><p>Menu File → Settings → Project → Project Interpreter. (For Apple users: PyCharm → Preferences → Project →
 Project Interpreter.)</p></li>
@@ -94,11 +88,11 @@ Project Interpreter.)</p></li>
 
 <div>
 <h3>Install Dev Requirements</h3>
-    <p>The file <code class="docutils literal notranslate"><span class="pre">requirements_dev.txt</span></code>
+    <p><em>The file <code class="docutils literal notranslate"><span class="pre">requirements_dev.txt</span></code>
         contains the list of the third-party packages that you need for development, such as
         <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> or
         <code class="docutils literal notranslate"><span class="pre">pytest</span></code>, but
-        that the end-user does not need to use your package.</p>
+        that the end-user does not need to use your package.</em></p>
 <p>In PyCharm's terminal:</p>
 <ol class="arabic">
 <li><p>Ensure you are in the directory of your package (e.g. <code class="docutils literal notranslate"><span class="pre">D:\GitHub\my_toy_package</span></code>).</p></li>
@@ -117,7 +111,7 @@ the line. If not:</p>
 
 <div>
 <h3>Install Your Package in “Development Mode”</h3>
-    <p>This way, your package behaves as if it were installed, but any change you make will have effect immediately.</p>
+    <p><em>This way, your package behaves as if it were installed, but any change you make will have effect immediately.</em></p>
     <p>In PyCharm's terminal, you should still be in the directory of your package. Do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">develop</span>
 </pre></div>
@@ -176,14 +170,14 @@ check the result, you can open the file <code class="docutils literal notranslat
 </div>
 </li>
 </ol>
-<p>In a browser, you can go to your GitHub account to check that everything is there.</p>
+    <p>In a browser, you can go to your <a href="https://github.com">GitHub</a> account to check that everything is there.</p>
 </div>
 
 
 
 <div class="readthedocs">
 <h3>Set up ReadTheDocs</h3>
-<p>On ReadTheDocs' website:</p>
+<p>On <a href="https://readthedocs.org">ReadTheDocs' website</a>:</p>
 <ol class="arabic">
     <li><p>Go to “My Projects”.</p></li>
     <li><p>Import a Project → Importer manuellement.</p></li>
@@ -196,6 +190,7 @@ check the result, you can open the file <code class="docutils literal notranslat
 </li>
     <li><p>Admin → Advanced settings.</p></li>
     <li><p>Check “Installer votre projet dans un virtualenv via setup.py install”.</p></li>
+    <li><p>Validate.</p></li>
 </ol>
 </div>
 
@@ -204,7 +199,7 @@ check the result, you can open the file <code class="docutils literal notranslat
 <div class="travis">
 <h3>Set up Travis CI</h3>
 <ol class="arabic">
-<li><p>On Travis' website:</p>
+<li><p>On <a href="https://travis-ci.org">Travis' website</a>:</p>
 <ol class="arabic simple">
 <li><p>Login using your Github credentials.</p></li>
 <li><p>It may take a few minutes for Travis CI to load up a list of all your GitHub repos. If you do not see your
@@ -229,17 +224,17 @@ new repo, log out and log in again.</p></li>
 <div class="pyup">
 <h3>Set up Pyup</h3>
 <ol class="arabic">
-<li><p>On Pyup website:
+<li><p>On <a href="https://pyup.io">Pyup's website</a>:
 <ol class="arabic simple">
 <li><p>Click on the green <em>Add Repo</em> button and select the repo you created.</p></li>
 <li><p>A pop up appears. Personally, I checked the first item and unchecked the two others.</p></li>
 </ol>
 <p>Within a few minutes, you will probably receive a pull request in GitHub (and in your email).</p></p>
 </li>
-<li><p>On GitHub website, open the pull request and:</p>
+<li><p>On <a href="https://github.com">GitHub's website</a>, open the pull request and:</p>
 <ol class="arabic simple">
 <li><p>Merge pull request.</p></li>
-<li><p>Accept merge.</p></li>
+<li><p>Confirm merge.</p></li>
 <li><p>Delete branch.</p></li>
 </ol>
 </li>
@@ -252,7 +247,7 @@ new repo, log out and log in again.</p></li>
 <div class="github">
 <h3>Check That Everything Is Working</h3>
 <ol class="arabic simple">
-<li class="github"><p>In PyCharm, commit/push if necessary, i.e.:</p>
+<li class="github"><p>In PyCharm, make a slight modification, e.g. in the file <code class="docutils literal notranslate"><span class="pre">README.rst</span></code>. Then commit/push:</p>
 <ol class="arabic simple">
 <li><p>Menu VCS → Commit.</p></li>
 <li><p>Enter a commit message.</p></li>
@@ -260,24 +255,36 @@ new repo, log out and log in again.</p></li>
 <li><p>Push.</p></li>
 </ol>
 </li>
-<li class="travis"><p>In Travis CI website: go to Build History. The build should be a success (it may take several minutes).</p></li>
-<li class="codecov"><p>In Codecov website: once Travis has finished building, you can navigate in your project to see what parts
-of the code are covered by the tests.</p></li>
-<li class="readthedocs"><p>In ReadTheDocs website:</p>
+    <li class="travis"><p>On <a href="https://travis-ci.org">Travis' website</a>:</p>
+<ol class="arabic simple">
+<li><p>Go to Build History.</p></li>
+<li><p>The build should be a success (it may take several minutes).</p></li>
+</ol>
+</li>
+    <li class="codecov"><p>On <a href="https://codecov.io">Codecov's website</a>:</p>
+<ol class="arabic simple">
+<li><p>Log in with your GitHub account.</p></li>
+<li><p>Click on your name.</p></li>
+<li><p>Select your package.</p></li>
+<li><p>Once Travis has finished building, you can navigate in your project to see what parts of the code are covered by the tests.</p></li>
+</ol>
+</li>
+<li class="readthedocs"><p>On <a href="https://readthedocs.org">ReadTheDocs' website</a>:</p>
 <ol class="arabic simple">
 <li><p>In <em>Compilations</em>, the doc should be <em>transmis</em>.</p></li>
 <li><p>Open the documentation.</p></li>
 <li><p>In the table of contents, click on the first page (e.g. <em>My Toy Package</em>). Depending on your initial
 choice of options, you should have three to five <em>badges</em>:</p>
 <ol class="arabic simple">
-<li class="pypi"><p>PyPI: invalid (there will be the version number after your first release).</p></li>
+<li class="pypi"><p>PyPI: package or version not found (there will be the version number after your first release).</p></li>
 <li class="travis"><p>Build: passing.</p></li>
 <li><p>Docs: passing.</p></li>
 <li class="codecov"><p>Codecov: with a percentage.</p></li>
 <li class="pyup"><p>Pyup: up-to-date.</p></li>
 </ol>
 </li>
-<li><p>In the table of contents, click on <em>Reference</em>. You should see the documentation of your functions.</p></li>
+<li><p>In the table of contents, click on <em>Reference</em>. You should see the documentation of the classes
+    provided by the template.</p></li>
 </ol>
 </li>
 </ol>
