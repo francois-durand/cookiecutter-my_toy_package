@@ -57,7 +57,7 @@ Tick the tools that you want to use:
                 </ul>
                 </li>
                 <li><input type="checkbox" checked onchange="switchVisibility(this, 'pyup')"> Pyup: maintain the
-                    development requirements up to date. <em>Recommended for big projects.</em></li>
+                    development requirements up to date. <em>Recommended for large projects.</em></li>
             </ul>
             </li>
         </ul>
