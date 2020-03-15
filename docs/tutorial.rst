@@ -2,7 +2,7 @@
 Tutorial
 ========
 
-Package Helper helps you create and maintain a package. If you use all the tools presented in this tutorial, things
+Package Helper helps you create, develop and maintain a package. If you use all the tools presented in this tutorial, things
 will work this way:
 
 * You create the file structure of your package in less than a minute with Cookiecutter_.
@@ -76,9 +76,9 @@ Create Your package
 .. raw:: html
    :file: _static/create_your_package.html
 
--------------------------------
-During the Life of Your Package
--------------------------------
+---------------------------------
+Develop and Maintain Your Package
+---------------------------------
 
 .. raw:: html
    :file: _static/during_the_life_of_your_package.html

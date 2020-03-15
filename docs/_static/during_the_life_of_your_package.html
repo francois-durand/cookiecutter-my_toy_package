@@ -1,13 +1,18 @@
 <div class="pypi">
 <h3>Release a Version</h3>
+<p>Test your package:</p>
+<ol class="arabic">
+<li><p>Run the tests (in PyCharm and/or in <a href="https://travis-ci.org">Travis</a>).</p></li>
+<li class="codecov"><p>Check your coverage on <a href="https://codecov.io">Codecov</a> and add tests if necessary.</p></li>
+</ol>
 <p>In PyCharm:</p>
 <ol class="arabic">
-<li><p>Run the tests (locally and/or in <a href="https://travis-ci.org">Travis</a>).</p></li>
-<li class="codecov"><p>Check your coverage on <a href="https://codecov.io">Codecov</a> and add tests if necessary.</p></li>
     <li><p>Check that all new classes are in the file <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>
     and in the Reference section of the documentation.</p></li>
 <li><p>Generate the documentation locally in order to check that it is working.</p></li>
-<li><p>Update the file <code class="docutils literal notranslate"><span class="pre">HISTORY.rst</span></code>.</p></li>
+<li><p>Update the file <code class="docutils literal notranslate"><span class="pre">HISTORY.rst</span></code>.
+Stick to pure <code class="docutils literal notranslate"><span class="pre">.rst</span></code> syntax: never use Sphinx' specific
+    directives such as <code class="docutils literal notranslate"><span class="pre">:class:`MyClass`</span></code>.</p></li>
 <li><p>Commit/push.</p></li>
     <li><p>If you were working on a secondary branch (which is desirable), do what you have to do: pull request to master, etc.</p></li>
 <li><p>In PyCharm's terminal, ensure you are in the <em>master</em> branch and do one of the following:</p>
