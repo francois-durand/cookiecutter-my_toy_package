@@ -27,7 +27,7 @@ will work this way:
 .. _PyCharm: https://www.jetbrains.com/pycharm
 .. _GitHub: https://github.com
 .. _ReadTheDocs: https://readthedocs.org
-.. _Travis-CI: https://travis-ci.org
+.. _Travis-CI: https://travis-ci.com
 .. _PyPI: https://pypi.python.org/pypi
 .. _Codecov: https://codecov.io
 .. _Pyup: https://pyup.io

@@ -105,6 +105,8 @@ the line. If not:</p>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements_dev.txt</span></code></p></li>
 </ol>
+    <p><em>Linux users: if cryptography is already installed with apt-get install, you may need to uninstall it before
+    pip-installing the dev requirements.</em></p>
 </div>
 
 
@@ -202,7 +204,7 @@ check the result, you can open the file <code class="docutils literal notranslat
 <div class="travis">
 <h3>Set up Travis CI</h3>
 <ol class="arabic">
-<li><p>On <a href="https://travis-ci.org">Travis' website</a>:</p>
+<li><p>On <a href="https://travis-ci.com">Travis' website</a>:</p>
 <ol class="arabic simple">
 <li><p>Login using your Github credentials.</p></li>
 <li><p>It may take a few minutes for Travis CI to load up a list of all your GitHub repos. If you do not see your
@@ -212,7 +214,7 @@ new repo, log out and log in again.</p></li>
 </ol>
 </li>
 <li class="pypi"><p>In PyCharm's terminal, ensure that you are in the directory of your project and:
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">travis</span> <span class="n">encrypt</span> <span class="o">--</span><span class="n">add</span> <span class="n">deploy</span><span class="o">.</span><span class="n">password</span> <span class="s2">&quot;My PyPI password&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">travis</span> <span class="n">encrypt</span> <span class="o">--</span><span class="n">add</span> <span class="n">deploy</span><span class="o">.</span><span class="n">password</span> <span class="s2">&quot;My PyPI password&quot;</span> <span class="o">--</span><span class="n">com</span>
 </pre></div>
 </div>
 <p>(replace with your actual password, in quotation marks).</p></p>
@@ -258,7 +260,7 @@ new repo, log out and log in again.</p></li>
 <li><p>Push.</p></li>
 </ol>
 </li>
-    <li class="travis"><p>On <a href="https://travis-ci.org">Travis' website</a>:</p>
+    <li class="travis"><p>On <a href="https://travis-ci.com">Travis' website</a>:</p>
 <ol class="arabic simple">
 <li><p>Go to Build History.</p></li>
 <li><p>The build should be a success (it may take several minutes).</p></li>
