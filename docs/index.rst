@@ -7,6 +7,7 @@ Welcome to Package Helper's documentation!
 
    readme
    tutorial
+   migration
    contributing
    authors
    history

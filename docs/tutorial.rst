@@ -2,6 +2,11 @@
 Tutorial
 ========
 
+Important note: Package Helper is **no longer maintained**. We recommend you to migrate_ to `Package Helper 2`_.
+
+.. _migrate: https://package-helper.readthedocs.io/en/latest/migration.html
+.. _`Package Helper 2`: https://github.com/francois-durand/package_helper_2
+
 Package Helper helps you create, develop and maintain a package. If you use all the tools presented in this tutorial, things
 will work this way:
 
