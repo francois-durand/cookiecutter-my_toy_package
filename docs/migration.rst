@@ -13,13 +13,13 @@ migration guide to Package Helper 2.
 
    #. Ensure that the following lines are in the file::
 
-      sphinx>=1.4
-      sphinx-rtd-theme
+        sphinx>=1.4
+        sphinx-rtd-theme
 
    #. If you want to use jupyter notebooks in your documentation, ensure that you have also::
 
-      nbsphinx
-      ipykernel
+        nbsphinx
+        ipykernel
 
 #. File ``README.rst``:
 
