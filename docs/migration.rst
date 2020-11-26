@@ -9,6 +9,8 @@ Package Helper 2.
 
 #. Directory ``docs`` → file ``conf.py``. In the list ``extensions``, add ``'sphinx.ext.githubpages'``.
 
+#. File ``requirements.txt``: check that there is a line ``sphinx-rtd-theme``. If not, add it.
+
 #. File ``README.rst``:
 
    #. Replace the badges with the following lines::
@@ -32,13 +34,17 @@ Package Helper 2.
    #. In these lines, replace ``YOUR_PACKAGE_SLUG`` with your package slug and ``YOUR_USERNAME`` with your GitHub
       username.
 
-   #. If you want, replace the ReadTheDocs url with: ``https://YOUR_USERNAME.github.io/YOUR_PACKAGE_SLUG``. We will
+   #. If you want, replace the ReadTheDocs url with: ``https://YOUR_USERNAME.github.io/YOUR_PACKAGE_SLUG/``. We will
       keep the two documentations alive anyway, so do as you please.
 
 #. Download the :download:`workflows directory<_static/workflows.zip>`. Uncompress it into the ``.github`` directory
    of your project. For example, you should have a file ``.github/workflows/build.yml``.
 
+#. Commit/push.
+
 #. On the GitHub_ page of your package:
+
+   #. Go to "Actions". Check that your actions pass properly.
 
    #. *Tell GitHub Pages that the documentation files are in the "gh-pages" branch of your project:*
 
@@ -58,6 +64,9 @@ Package Helper 2.
 
 #. On Travis-CI_ website: remove the "hook" to your project. Since you won't use Travis-CI anymore, no need to waste
    power consumption.
+
+   #. Go to: https://travis-ci.org/account/repositories .
+   #. Put your package on "off".
 
 .. _`Package Helper 2`: https://github.com/francois-durand/package_helper_2
 .. _GitHub: https://github.com
