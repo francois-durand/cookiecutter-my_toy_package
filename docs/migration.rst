@@ -9,7 +9,17 @@ migration guide to Package Helper 2.
 
 #. Directory ``docs`` → file ``conf.py``. In the list ``extensions``, add ``'sphinx.ext.githubpages'``.
 
-#. File ``requirements.txt``: check that there is a line ``sphinx-rtd-theme``. If not, add it.
+#. File ``requirements.txt``: if this file does not exist, create it at the root of your project.
+
+   #. Ensure that the following lines are in the file::
+
+      sphinx>=1.4
+      sphinx-rtd-theme
+
+   #. If you want to use jupyter notebooks in your documentation, ensure that you have also::
+
+      nbsphinx
+      ipykernel
 
 #. File ``README.rst``:
 
