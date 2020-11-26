@@ -2,10 +2,10 @@
 Migration to Package Helper 2
 =============================
 
-Package Helper is **no longer maintained**. It is replaced by `Package Helper 2`_, which uses GitHub actions instead of
-additional services (such as Travis-CI and ReadTheDocs) in order to make your workflow even easier. For new projects,
-we recommend to use Package Helper 2. For your existing packages that used Package Helper, here is a migration guide to
-Package Helper 2.
+Package Helper is **no longer maintained**. It is replaced by `Package Helper 2`_: in order to make your workflow even
+easier, Package Helper 2 uses GitHub actions instead of additional services, such as Travis-CI and ReadTheDocs. For
+new projects, we recommend using Package Helper 2. For your existing packages that used Package Helper, here is a
+migration guide to Package Helper 2.
 
 #. Directory ``docs`` → file ``conf.py``. In the list ``extensions``, add ``'sphinx.ext.githubpages'``.
 
